@@ -1,0 +1,23 @@
+<section class="hero is-primary" *ngIf="authenCheck.isActivate" >
+  <div class="hero-head">
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-right nav-menu">
+          <a class="nav-item" routerLink="/home" >
+            Home
+          </a>
+          <a class="nav-item" routerLink="/document" >
+            Document
+          </a>
+          <a class="nav-item" routerLink="/contract" >
+            Contract
+          </a>
+          <a class="nav-item" (click)='logout()' >
+            Logout
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</section>
+<router-outlet></router-outlet>

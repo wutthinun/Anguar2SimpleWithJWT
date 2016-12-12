@@ -1,0 +1,36 @@
+<section class="hero is-dark is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+        </div>
+        <div class="column">
+          <div class="box">
+            <form (ngSubmit)='login()'>
+              <p class="control has-icon has-icon-left">
+                <input class='form-control input is-medium' type="text" name="user"
+                [(ngModel)]="localLogin.user"
+                #user=ngModel
+                required>
+                <i class="fa fa-user"></i>
+              </p>
+              <p class="control has-icon has-icon-keft">
+                <input class='form-control input is-medium' type="password" name="password"
+                [(ngModel)]="localLogin.password"
+                #pass=ngModel
+                required>
+                <i class="fa fa-key"></i>
+              </p>
+              <p class='control' [ngStyle]="{'text-align': 'center'}" >
+                <button class='button is-success is-medium' type="submit"
+                [disabled]="!user.valid || !pass.valid">Submit</button>
+              </p>
+            </form>
+          </div>
+        </div>
+        <div class="column">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
