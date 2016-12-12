@@ -1,6 +1,11 @@
 # Angular2ForStarter
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.21.
+for JWT Authentication. Ref API is https://github.com/AnuchitPrasertsang/golang-simple-login-api
+
+## Require
+* Bulma CSS from http://bulma.io/
+* FontAwesome from http://fontawesome.io/
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
